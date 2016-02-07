@@ -34,7 +34,7 @@ public class FlickrFetchr {
 
     public static final String XML_PHOTO = "photo";
 
-    private byte[] getUrlBytes(String urlSpec) throws IOException {
+    public byte[] getUrlBytes(String urlSpec) throws IOException {
         URL url = new URL(urlSpec);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         try{
@@ -92,7 +92,7 @@ public class FlickrFetchr {
                 String caption = parser.getAttributeValue(null, "title");
                 String smallUrl = parser.getAttributeValue(null, EXTRA_SMALL_URL);
 
-                GalleryItem item = new GalleryItem();
+                    GalleryItem item = new GalleryItem();
                 item.setId(id);
                 item.setCaption(caption);
                 item.setUrl(smallUrl);
