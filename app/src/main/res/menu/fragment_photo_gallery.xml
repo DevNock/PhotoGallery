@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:PhotoGallery="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_search"
+        android:title="@string/search"
+        android:icon="@android:drawable/ic_menu_search"
+        PhotoGallery:showAsAction="ifRoom"
+        PhotoGallery:actionViewClass="android.widget.SearchView"/>
+    <item
+        android:id="@+id/menu_item_clear"
+        android:title="@string/clear_search"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        PhotoGallery:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_item_toggle_polling"
+        android:title="@string/start_polling"
+        PhotoGallery:showAsAction="ifRoom"/>
+</menu>

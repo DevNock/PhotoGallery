@@ -104,7 +104,7 @@ public class ThumbnailDownloader<Token> extends HandlerThread {
     }
 
     public void queueThumbnail(Token token, String url){
-        Log.e(TAG, "Got an URL: " + url);
+        Log.i(TAG, "Got an URL: " + url);
         requestMap.put(token, url);
 
         handler.obtainMessage(MESSAGE_DOWNLOAD, token)
